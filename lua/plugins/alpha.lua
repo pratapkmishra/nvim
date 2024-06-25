@@ -27,8 +27,6 @@ return {
         dashboard.button("c", "  Config",            "<cmd> lua require('lazyvim.util').telescope.config_files()() <cr>"),
         dashboard.button("s", "  Restore Session",  [[<cmd> lua require("persistence").load() <cr>]]),
         dashboard.button("x", "  Lazy Extras",       "<cmd> LazyExtras <cr>"),
-        dashboard.button("l", "󰒲  Lazy",             "<cmd> Lazy <cr>"),
-        dashboard.button("q", "  Quit",             "<cmd> qa <cr>"),
       }
       for _, button in ipairs(dashboard.section.buttons.val) do
         button.opts.hl = "AlphaButtons"

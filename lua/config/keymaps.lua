@@ -9,3 +9,5 @@ vim.keymap.set(
 )
 
 vim.keymap.del("n", "<leader><space>")
+
+vim.api.nvim_set_keymap("n", "<leader>r", ":w<CR>:!python3 %<CR>", { noremap = true, silent = true })
